@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Install and build artifacts
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# FastAPI-specific
+*.log
+
+# Alembic migrations
+alembic/versions/*.pyc
+alembic/versions/*.pyo
+
+# Logs and database files
+*.log
+db.sqlite3
+instance/
+
+# Environment variables and secrets
+.env
+*.env
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# macOS & Linux system files
+.DS_Store
+*.bak
+
+# pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Profiling data
+*.prof
+
+test.cr
+Google-Playstore.csv
