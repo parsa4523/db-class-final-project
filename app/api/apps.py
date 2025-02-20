@@ -152,7 +152,7 @@ async def list_apps(
         }
     }
 
-@router.post("/", response_model=ResponseModel[List[AppList]])
+@router.post("/")
 async def create_app(
     app: AppCreate,
     db: Session = Depends(get_db)
@@ -199,7 +199,7 @@ async def get_app(
         }
     }
 
-@router.put("/{app_id}", response_model=ResponseModel[AppDetail])
+@router.put("/{app_id}")
 async def update_app(
     app_id: int,
     app: AppCreate,

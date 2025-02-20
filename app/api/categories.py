@@ -71,7 +71,7 @@ async def get_category(
         raise HTTPException(status_code=404, detail="Category not found")
     return category
 
-@router.put("/{category_id}", response_model=ResponseModel[CategorySchema])
+@router.put("/{category_id}", response_model=CategorySchema)
 async def update_category(
     category_id: int,
     category: CategoryCreate,
